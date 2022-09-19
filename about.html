@@ -6,7 +6,7 @@
 	<title>紀耀庭主頁</title>
 </head>
 <body>
-	<img src="./presonal.jpg" alt="個人照"></img>
+	<img src="./presonal.jpg" alt="個人照" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 	<table width="70%" border="1">
 		<style>
 			* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
@@ -14,6 +14,18 @@
 			color: cadetblue;
 		}
 	</style>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "personal.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "JI YAO TING";
+		}
+	</script>
+
 	
 	<h1 style="border: 0;">紀耀庭</h1>
 	
@@ -33,7 +45,7 @@
 
 	<td><h1>爆紅反諷影片「不要去台灣」比利時女孩看完竟感動泛淚？《VS MEDIA》<br>
 	&nbsp;&nbsp;<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe></h1></td><br><br>
-	<h3>Version:5.0.1</h3>
+	<h3>Version:6</h3>
 
 
 </body>
